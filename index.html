@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    @keyframes colorchange {
+        0%   {background: red; color: blue;}
+        25%  {background: yellow; color: red;}
+        50%  {background: blue; color: yellow;}
+        75%  {background: green; color: blue;}
+        100% {background: red; color: green;}
+    }
+    body {
+        animation: colorchange 10s infinite;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        text-align: center;
+    }
+    .blink {
+        animation: blinker 1s linear infinite;
+    }
+    @keyframes blinker {
+        50% { opacity: 0; }
+    }
+    </style>
+</head>
+<body>
+    <h1>GRATIS IPHONE TIL ALLE!!!</h1>
+    <h2 class="blink">KUN I DAG!!!</h2>
+    <p>BARE INDTAST DINE KREDITKORT OPLYSNINGER NEDENFOR!!!</p>
+    <form>
+        <label for="name">NAVN:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="cc">KREDITKORTNUMMER:</label><br>
+        <input type="text" id="cc" name="cc"><br>
+        <input type="submit" value="FÅ DIN GRATIS IPHONE NU!!!">
+    </form>
+</body>
+</html>
